@@ -21,6 +21,11 @@ module.exports = {
           }
         ]
     },
+    resolve: {
+        alias: {
+            WHS: 'whs'
+        }
+    },
     plugins: [
         new HtmlWebPackPlugin({
             template: './src/index.html',

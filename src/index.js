@@ -1,16 +1,9 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import Adventure from './containers/Adventure';
 
-class App extends Component {
-
-    render() {
-        return (
-            <Adventure />
-        )
-    }
-}
+const App = () => <Adventure />;
 
 const DOMContainer = document.getElementById('app');
 ReactDOM.render(<App />, DOMContainer);
